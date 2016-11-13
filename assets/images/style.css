@@ -1,0 +1,129 @@
+
+.sec-wrapper {
+
+}
+
+/*This would adjust the image size for us to see the crystal*/
+img {
+    height: 90px;
+    width: 90px;
+}
+
+/*this would change the layout of images*/
+#images {
+    list-style: none;
+    float: left;
+    margin: 5px;
+
+
+}
+
+li {
+    display: inline-block;
+}
+
+this would provide a coloring for the area that we see on the screen
+
+
+
+
+
+
+.scoresection {
+    background: yellow;
+    width: 280px;
+    background-color: Yellow;
+    border: solid;
+    border-style: solid;
+
+
+
+}
+
+#score text {
+
+}
+
+
+
+.scoresection {
+
+}
+
+body {
+ margin: 0 auto;
+ width: 100%;
+
+
+}
+
+/*This is to redesign the header */
+#header {
+    padding: 1px 1px 1px 1px;
+    background: green;
+    text-align: center;
+    font-familt: Arial;
+    color: white;
+    width: 40%;
+    margin: 0 auto 5px auto;
+
+
+
+}
+
+/*This is the instruction sections redesign and alignment*/
+.information {
+    margin: 0 auto;
+    padding: 5px;
+    font-family: monospace;
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    width: 50%;
+}
+
+/*This will cover the score section covering wins & loses*/
+.score {
+    margin: 0 auto;
+    background:green;
+    padding: 5px;
+    text-align: center;
+    border-style: dashed;
+    width: 49.6%;
+    margin-top: 5px;
+    font-family: monospace;
+    color: white;
+
+}
+
+/*Some small changes to the background color of the game score board*/
+.scoreboard {
+    background: #00aa6f;
+    position: relative;
+
+}
+
+.sec-wrapper {
+    display : inline-block;
+}
+
+#userscoreboard1 {
+    margin: 10px auto 10px auto;
+    text-align: center;
+    padding: 20px;
+    width: 46%;
+    background: #0c860c;
+    font-family: monospace;
+    color: whitesmoke;
+
+}
+
+#score {
+    margin: 0 auto;
+    background: green;
+    text-align: center;
+    font-family: monospace;
+    color: aqua;
+
+
+}

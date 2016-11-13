@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crystals Collectors</title>
+        <link rel="stylesheet" href="assets/images/reset.css">
+        <link rel="stylesheet" href="assets/images/style.css">
+
+    </head>
+    <body>
+<!--       This is the title nav bar with the page-->
+        <div id="header">
+            <h1>Crystals Collector</h1>
+
+        </div>
+<!--        the main container-->
+        <div class="information" id="guide">
+<!--         inner container-->
+          <div class="rules" id="instruct">
+              <h2 id="guidance">Instructions</h2>
+
+               <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. </p>
+               <p>you win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+               <p>The value of each crystal is hidden from you until you click on it.</p>
+               <p>Each time when the game starts, the game will change the values of each crystal. </p>
+            </div>
+
+        </div>
+
+<!--        This is where the program would randomly show the number-->
+       <div class="score" id="generated">
+<!--          first wrapper-->
+          <div class="wrapper">
+              <div class="scoresection">
+               <h3 id="score text">Score to Achieve</h3>
+               <p>game number: <span id="number"></span></p>
+              </div>
+              <div class="scoreboard", id="scorebox">
+                  <ul>
+                      <li><p>Win :<span id="win">0</span></p></li>
+                      <li><p>Loss :<span id="loss">0</span></p></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="sec-wrapper">
+
+                  <button id="firstcrystal"><img id="1stcrystal" src="assets/images/firstcrystal.jpg" alt=""></button>
+                  <button id="seccrystal"><img id="2ndcrystal" src="assets/images/secondcrystal.jpg" alt=""></button>
+                  <button id= "thirdcrystal"><img id="3rdcrystal" src="assets/images/thirdcrystal.jpg" alt=""></button>
+                  <button id = "fourcrystal"><img id="4thcrystal" src="assets/images/fourthcrystal.jpg" alt=""></button>
+
+          </div>
+
+        </div>
+<!--        this will be covering the score board that the user enters and will display the score-->
+        <div class= "userscore" id="userresult">
+<!--           this is the user score box and total he has after clicking the crystal images-->
+            <div class="section" id="userscoreboard">
+                <p id="userscoreboard1">Your total score is : <span id="userresult"></span></p>
+<!--                this is where the user would see the score                       that they have after clicking the crystal img-->
+                <div id="userbox">
+                    <span id="score"></span>
+                </div>
+            </div>
+
+        </div>
+     <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <script src="game.js" type="text/javascript"></script>
+
+
+    </body>
+</html>
