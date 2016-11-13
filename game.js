@@ -25,56 +25,63 @@ $(document).ready(function () {
         $('#number').append(target);
     }
     //This is the way for the function to recognize the buttons as a clickable function and then make the scores possible.//
+    // Note to self: using a class did not seem to create any result and thus had to resort to creating individual clicks for this to work//
     function clickable(){
     $('#firstcrystal').on("click", function () {
         userScore = userScore + crystal1;
-        $('#userresult').html(userScore);
+        $('#score').html(userScore);
         test();
 
     })
     $('#seccrystal').on("click", function () {
         userScore = userScore + crystal2;
-        $('#userresult').html(userScore);
+        $('#score').html(userScore);
         test();
 
     })
     $('#thirdcrystal').on('click', function () {
         userScore = userScore + crystal3;
-        $('#userresult').html(userScore);
+        $('#score').html(userScore);
         test();
     })
     $('#fourcrystal').on('click', function () {
         userScore = userScore + crystal4;
-        $('#userresult').html(userScore);
+        $('#score').html(userScore);
         test();
     })
 
     }
+
+    //This function tests the scores and resets the score data for both the target score and the user score as well as the individual diamond values//
+//    This is incase the user wins//
     function test(){
     if (userScore === target) {
         alert("Congratulations you've won");
         win++;
         $('#win').html(win);
-        target = 0;
+        target = null;
         targetScore();
-        $(document).getElementById("#userresult").reset();
+        $(document).getElementById("score").reset();
         crystal1 = Math.floor(Math.random() * 12) + 1;
         crystal2 = Math.floor(Math.random() * 12) + 1;
         crystal3 = Math.floor(Math.random() * 12) + 1;
         crystal4 = Math.floor(Math.random() * 12) + 1;
     }
+//        this is incase the user loses//
     if (userScore > target) {
         alert("Sorry you've lost");
+        location.reload();
         loss++;
         $('#loss').html(loss);
         target = 0;
         targetScore();
-        $(document).getElementById("#userresult").reset();
+        $(document).getElementById("#score").reset();
         crystal1 = Math.floor(Math.random() * 12) + 1;
         crystal2 = Math.floor(Math.random() * 12) + 1;
         crystal3 = Math.floor(Math.random() * 12) + 1;
         crystal4 = Math.floor(Math.random() * 12) + 1;
     }
+//        This is let the program to continue on functioning if the scores don't reach the above requirements//
     else{
         clickable();
     }
